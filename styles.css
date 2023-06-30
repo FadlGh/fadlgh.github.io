@@ -1,34 +1,72 @@
 * {
   box-sizing: border-box;
   margin: 0px;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
   background-color: white;
   font-family: "Open Sans", sans-serif;
+  overflow-y: scroll;
+  overflow: hidden;
 }
 
-.topnav {
+.topnav .links {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  padding-right: 50px;
 }
 
 .topnav a {
   color: #525252;
-  padding: 16px 3%;
+  padding: 30px 1%;
   text-decoration: none;
   font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav .links a:hover {
   color: grey;
 }
 
-.topnav a.active {
+.topnav .links a.active {
   color: black;
+  font-weight: bold;
+}
+
+.topnav .name {
+  justify-content: left;
+  padding: 30px 0 0 4%;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+  margin: 0 10% 0 25%;
+}
+
+.text {
+  flex-direction: column;
+}
+
+.home img {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  margin: 0px 5%;
+}
+
+.home p,
+h1 {
+  margin: 0px 5% 5% 0px;
 }
