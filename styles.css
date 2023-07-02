@@ -14,7 +14,7 @@ body {
   justify-content: space-between;
   width: 100%;
   overflow: hidden;
-  background-color: whitesmoke;
+  background: linear-gradient(rgb(255, 255, 255), #6a757e);
 }
 
 .topnav .links {
@@ -55,24 +55,42 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 90%;
   height: 100vh;
   margin: auto;
 }
 
 .text {
   flex-direction: column;
+  padding-bottom: 40px;
 }
 
-#home img {
+#home .image img {
+  display: block;
   width: auto;
   height: auto;
   max-width: 250px;
-  margin: 0px 5%;
+  margin-bottom: 25px;
+  margin-right: 35px;
   border-radius: 15%;
 }
 
 #home p,
 h2 {
   margin: 0px 5% 5% 0px;
+}
+
+#home .logo-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+#home .logo-list img {
+  width: 20px;
+  margin: 0;
+  height: auto;
 }
