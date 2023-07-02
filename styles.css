@@ -65,10 +65,11 @@ body {
 }
 
 #home img {
-  width: 75%;
-  height: 25%;
-  max-width: 200px;
+  width: auto;
+  height: auto;
+  max-width: 250px;
   margin: 0px 5%;
+  border-radius: 15%;
 }
 
 #home p,
