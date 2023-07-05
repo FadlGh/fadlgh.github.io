@@ -121,7 +121,7 @@ h2 {
   border-radius: 15%;
 }
 
-@media (max-width: 506px) {
+@media (max-width: 600px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -135,7 +135,7 @@ h2 {
   }
 }
 
-@media (min-width: 506px) {
+@media (min-width: 600px) {
   .footer {
     display: flex;
   }
