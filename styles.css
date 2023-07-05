@@ -121,8 +121,31 @@ h2 {
   border-radius: 15%;
 }
 
-.footer {
-  display: flex;
+@media (max-width: 506px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-footer {
+    color: white;
+    width: 100%;
+    padding: 20px;
+    background-color: #071929;
+  }
+}
+
+@media (min-width: 506px) {
+  .footer {
+    display: flex;
+  }
+
+  .contact-footer {
+    color: white;
+    width: 70%;
+    padding: 20px;
+    background-color: #071929;
+  }
 }
 
 .social-media-logos {
@@ -142,6 +165,7 @@ h2 {
   height: auto;
   min-width: 15px;
   max-width: 45px;
+  flex-basis: 33.33333%;
   margin: 0;
   margin-bottom: 20px;
   height: auto;
@@ -150,13 +174,6 @@ h2 {
 .social-media-title {
   text-align: center;
   margin-bottom: 10%;
-}
-
-.contact-footer {
-  color: white;
-  width: 50%;
-  padding: 20px;
-  background-color: #071929;
 }
 
 .contact-footer h2 {
