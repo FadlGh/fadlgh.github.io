@@ -11,6 +11,17 @@
       rel="stylesheet"
     />
     <title>F4dL</title>
+    <script src="script.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("objpmjdGp8MVIaZU9");
+      })();
+    </script>
   </head>
   <body>
     <nav class="topnav">
@@ -115,8 +126,9 @@
       </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="social-media-logos">
+        <h3>Email: fadl2009gh@gmail.com</h3>
         <a href="https://fadlgh.itch.io/" target="_blank"
           ><img src="img/logos/itch.png" alt=""
         /></a>
@@ -138,25 +150,6 @@
           ><img src="img/logos/youtube.png" alt=""
         /></a>
       </div>
-
-      <footer id="contact" class="contact-footer">
-        <h2>Contact</h2>
-        <form class="contact-form">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit">Send</button>
-        </form>
-      </footer>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
